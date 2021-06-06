@@ -1,6 +1,6 @@
 @echo off
-for %%a in (*.flv) do ffmpeg -i "%%~a" -f mp4 "%%~na.mp4"
-::for %%a in (*.flv) do ffmpeg -i "%%~a" -vcodec copy -f mp4 "%%~na.mp4"
+::for %%a in (*.flv) do ffmpeg -i "%%~a" -f mp4 "%%~na.mp4"
+for %%a in (*.flv) do ffmpeg -i "%%~a" -vcodec copy -f mp4 "%%~na.mp4"
 
 rd /s /q flv_del
 md flv_del
