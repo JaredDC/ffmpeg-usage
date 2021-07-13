@@ -35,6 +35,10 @@ REM del "%OUTPUT_MP4%"
 REM hardsubs to MP4
 REM ffmpeg  -i  "%INPUT%%SUFFIX%"  -vf subtitles="%SRT_FILE%" -y "%OUTPUT%"
 
+REM ffmpeg -i "a.srt" "a.ass"
+REM set the font, size
+REM ffmpeg  -i  "%INPUT%%SUFFIX%"  -vf ass="test.ass" -y "%OUTPUT%"
+
 REM softsubs to MP4
 REM ffmpeg -i "%INPUT%%SUFFIX%" -i "%SRT_FILE%" -c:v copy -c:a copy -c:s mov_text "%OUTPUT_MP4%"
 
